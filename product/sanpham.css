@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+.nameMain{
+    color: #3B3B3B;
+    font-size: 32px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 400;
+    word-wrap: break-word
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    width: 100vh;
+    justify-content: space-around;
+    
+}
+.nav-bar a{
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #3B3B3B;
+}
+.customer-cart{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    align-items: center;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+}
+.search input{
+    width: 150px;
+    height: 25px;
+}
+#cardLogout{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly ;
+    width: 320px;
+}
+.login{
+  text-decoration: none;
+  color: #F95335;
+  cursor: pointer;
+}
+#cardLogin{
+  display: flex;
+  align-items: center;
+  justify-content:space-around ;
+  width: 300px;
+}
+.iconShop{
+    text-decoration: none;
+    color: #6c14d0;
+}
+.loginUser{
+  width: 120px;
+  display: flex;
+  justify-content: space-around;
+}
+.poster img{
+    width: 100%;
+}
+.containerListProduct{
+    display: flex;
+}
+.categoryProduct{
+    background-color: rgb(183, 171, 159);
+    width: 250px;
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 4px #6c14d0;
+}
+.nameProduct{
+    font-size: 25px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(189, 234, 220);
+    height: 60px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.nameProduct:hover{
+    background-color: green;
+}
+.listProduct{
+    width: 100%;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 20px;
+}
+.cardProduct{
+    border: 1px solid black;
+    width: 270px;
+    height: 450px;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 20px;
+    line-height: 35px;
+    margin-top: 20px;
+    box-shadow: 0 0 4px #6c14d0;
+}
+.cardProduct img{
+    width: 200px;
+    height: 200px;
+    transition: 0.2s;
+}
+.cardProduct:hover img{
+    height: 200px;  
+    transform: scale(1.1);
+}
+.infoProduct{
+    margin-top: 15px;
+}
+.buyNow{
+     color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+    background:linear-gradient(to right, #c72092,#6c14d0)
+}
+.addNow{
+    color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+    cursor: pointer;
+    background:linear-gradient(to right, #c72092,#6c14d0)
+}
+.text-white{
+    text-decoration: none;
+  }
+  .search1 {
+    position: relative;
+    width: 400px;
+    margin: 0 10px;
+    top:8px;
+  }
+  .search1 label {
+    position: relative;
+    width: 100%;
+  }
+  .search1 label input {
+    width: 70%;
+    height: 35px;
+    border-radius: 40px;
+    padding: 5px 20px;
+    padding-left: 35px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid black;
+    font-size: 15px;
+
+  }
+  
+  .search1 label ion-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.2rem;
+  }
+.pagination{
+    margin-top: 25px;
+    margin-left: 45vw;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+.pagination button{
+    border: none;
+    background-color: white;
+}
+
+.item_page_choose {
+    color: red;
+    text-decoration: underline;
+}
+
+

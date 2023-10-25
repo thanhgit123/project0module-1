@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.nameMain{
+     color: #3B3B3B;
+     font-size: 32px;
+     font-family:'Times New Roman', Times, serif;
+     font-weight: 400;
+     word-wrap: break-word
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    width: 100vh;
+    justify-content: space-around;
+    
+}
+.nav-bar a{
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #3B3B3B;
+}
+#customer-cart{
+    display: flex;
+    justify-content: space-;
+    width: 350px;
+    align-items: center;
+}
+#cardLogout{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly ;
+    width: 320px;
+}
+.login{
+  text-decoration: none;
+  color: #F95335;
+  cursor: pointer;
+}
+#cardLogin{
+  display: flex;
+  align-items: center;
+  justify-content:space-around ;
+  width: 300px;
+ 
+}
+.loginUser{
+  width: 120px;
+  display: flex;
+  justify-content: space-around;
+}
+.container{
+    width: 100%;
+    height:100vh;
+    background-image: url(/product/img-product/jogging-2343558_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+}
+.detailProduct{
+    display: flex;
+    width: 70vw;
+    height: 600px;
+    background-color: #e8e8de;
+    justify-content: space-around;
+    margin-left: 250px;
+    align-items: center;
+    border-radius: 3px;
+}
+.moreProduct{
+    font-size: 20px;
+    text-decoration: none;
+    color: #6c14d0;
+    
+}
+.imgDetailProduct{
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.imgDetailProduct img{
+    width: 330px;
+    height: 430px;
+}
+.inforDetail{
+    width: 430px;
+    height: 400px;
+    font-size: 25px;
+    line-height: 43px;
+}
+.btnDetail{
+    width: 300px;
+    height: 50px;border-radius: 3px;
+    background:linear-gradient(to right, #c72092,#6c14d0);
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}

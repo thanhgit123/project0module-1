@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/deca93ff1c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="product.css">
+    <link rel="icon" href="/img/favicon/favicon (3).ico">
+
+</head>
+
+<body>
+    <header>
+        <div class="my-header">
+            <a href="/main.html" style="font-size: 30px; color: black; text-decoration: none;">AMARA</a> 
+         <span><i class="fa-solid fa-user"></i></span> 
+        </div>
+    </header>
+
+  <div class="container">
+    <div class="menu-admin">
+         <h3 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Admin</h3>
+         <ul>
+            <div  class="box">
+                <li><a href="../nguoidung/users.html">Quản lý người dùng</a></li>
+           </div>
+
+            <div  class="box-product">
+                <li><a href="../sanpham/product.html">Quản lý sản phẩm</a></li>
+            </div>
+
+            <div  class="box">
+                  <li><a href="../phanloaiSP/phanloai.html">Phân loại sản phẩm</a></li>
+            </div>
+
+            <div  class="box">
+                  <li><a href="../quanlydonhang/donhang.html">Quản lý đơn hàng</a></li>
+            </div>
+        </ul>
+    </div>
+
+    <div class="main-content">
+          <div class="crud">
+            <h3 style="color: #633598;font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Tóm tắt thông tin sản phẩm</h3><br>
+            <table style="font-size: 20px; color: #000000">
+              <tr>
+                <td style="padding-bottom: 15px">Tên sản phẩm</td>
+                <td style="padding-bottom: 15px">
+                  <input type="text"  placeholder="Nhập tên sản phẩm" id="nameProduct" style="outline: none;" />
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom: 15px">Loại </td>
+                <td style="padding-bottom: 15px">
+                  <select id="categorySelect" name="category" style="width: 300px;margin-left: 20px;height: 30px;">
+                    <option value=""></option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom: 15px">Ảnh </td>
+                <td style="padding-bottom: 15px">
+                  <img id="image" src="" alt="" width="100px" height="100px" style="margin-left: 20px;" /><br>
+                  <input type="file" id="imgProduct" style="outline: none;margin-left: 20px;" />
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom: 15px">Giá tiền</td>
+                <td style="padding-bottom: 20px">
+                  <input type="text" id="priceProduct" placeholder="Nhập giá tiền" style="outline: none; width: 200px;height: 30px;margin-left: 20px; padding-left: 10px;" />
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom: 20px">Số lượng</td>
+                <td style="padding-bottom: 20px">
+                  <input type="text" id="quantity" placeholder="Nhập số lượng" style="width: 200px;height: 30px;margin-left: 20px;padding-left: 10px;" />
+                </td>
+              </tr>
+            </table>
+            <div class="buttonSave">
+              <button class="btn btn-success" onclick="saveButton()" style=" color: white; width: 100px;height: 30px; background:linear-gradient(to right, #c72092,#6c14d0);cursor: pointer; ">
+                Save
+              </button>
+              <button class="btn btn-success" onclick="editAll()" style=" color: white; width: 100px;height: 30px; background:linear-gradient(to right, #c72092,#6c14d0);cursor: pointer;">
+                Chỉnh sửa
+              </button>
+            </div>
+          </div>
+    
+          <div class="productAdded">
+          <h3 style="font-size: 20px; color: #633598;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Sản phẩm được thêm</h3>
+          <table
+            id="tableAdded"
+            style="text-align: center; font-size: 20px"
+          ></table>
+        </div>
+      </div>
+      
+    </div>
+  
+  <script src="product.js"></script>
+
+</body>
+</html>

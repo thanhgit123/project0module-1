@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+    <link rel="stylesheet" href="inforDeatil.css" />
+    <script src="https://kit.fontawesome.com/deca93ff1c.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/favicon/favicon (3).ico">
+</head>
+<body>
+    <header>
+        <div class="nameMain"><a href="/main.html" style="text-decoration: none;color: black;">AMARA</a></div>
+        <nav class="nav-bar">
+          <a href="/main.html">Trang Chủ</a>
+          <a href="/gioithieu/gioithieu.html">Giới Thiệu</a>
+          <a href="#">Mới & Nổi Bật</a>
+          <a href="/product/sanpham.html">Sản Phẩm</a>
+          <a href="#">Liên Hệ</a>
+        </nav>
+        
+        <div id="customer-cart">
+        </div>
+    </header><br>
+
+    <div class="container">
+       <div class="detailProduct">
+            <div class="imgDetailProduct">   
+                <a class="moreProduct" href="/product/sanpham.html"><i class="fa-solid fa-arrow-left"></i>Xem thêm sản phẩm</a>
+                <img  id="imgDetailProduct"  alt="">
+            </div>
+            <div class="inforDetail">
+                <h2 id="nameDetail"></h2>
+                 <p id="priceDetail"></p>
+                <p>Thông tin sản phẩm:</p>
+                <ul>
+                    <li>Tăng thêm chiều cao 4cm</li>
+                    <li>Phối đồ mọi phong cách</li>
+                    <li>Đế khâu 2 lớp chuẩn hàng</li>
+                    <li>Size: 36 > 43 dành cho cả nam và nữ</li>
+                    <li>Chất liệu cao cấp, hiện đại</li>
+                </ul><br>
+               
+                <button class="btnDetail" onclick="addProduct()" >Thêm Vào Giỏ Hàng</button>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="inforDetail.js"></script>
+</body>
+</html>

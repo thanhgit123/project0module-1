@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body{
+        background-color: #f5f5f5;
+    }
+    header{
+        background-color: white;
+    }
+    .my-header{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 50px;
+        height: 50px    ;
+        align-items: center ;   
+        background-color:white;
+    }
+    .menu-admin{
+       font-family:Arial, Helvetica, sans-serif;
+        width: 250px;
+        height: 270px;
+        padding: 20px;
+        line-height: 45px;
+        font-size: 20px;
+        border: 1.5px solid rgb(236, 217, 217);background-color: white;
+
+    }
+    .menu-admin a{
+        text-decoration: none;
+        color: black;
+        margin-left: 10px;
+    }
+    .menu-admin li{
+        list-style: none;
+    }
+
+.box {
+    width: 200px;
+}
+.box-deal{
+    border-radius: 10px;
+    background-color: aquamarine;
+  }
+ .billManager{
+    text-align: center;  
+    height: 100%;
+    font-size: 19px;
+    width: 100%;
+  }
+  .myTable{
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .myTable th{
+    padding: 18px;
+  }
+  .myTable tr td{
+    padding: 35px;
+  }
+  .btnBill{
+    width: 90px;
+    height: 40px;
+    background:linear-gradient(to right, #c72092,#6c14d0);
+    cursor: pointer;
+    color: white;
+  }
+  
+
+ 
+  
+  

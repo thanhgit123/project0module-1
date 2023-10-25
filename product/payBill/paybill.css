@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;   
+}
+.nameMain{
+     color: #3B3B3B;
+     font-size: 32px;
+     font-family:'Times New Roman', Times, serif;
+     font-weight: 400;
+     word-wrap: break-word
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    width: 100vh;
+    justify-content: space-around;
+    
+}
+.nav-bar a{
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #3B3B3B;
+}
+#customer-cart{
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+    align-items: center;
+}
+#cardLogout{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly ;
+    width: 320px;
+}
+.login{
+  text-decoration: none;
+  color: #F95335;
+  cursor: pointer;
+}
+#cardLogin{
+  display: flex;
+  align-items: center;
+  justify-content:space-around ;
+  width: 300px;
+ 
+}
+.loginUser{
+  width: 120px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.billManager{
+  text-align: center;
+  margin-top: 50px;
+}
+.myTable{
+    width:500px;
+    margin: 0 auto;
+    width: 95vw;
+}
+.myTable th{
+  border: 1px solid black;
+  padding: 15px;
+}
+.myTable td {
+  border: 1px solid black;
+  padding: 40px;
+}
+#billTable{
+  border: 1px  solid black;
+}
+.btnBill{
+  width: 90px;
+  height: 40px;
+  background:linear-gradient(to right, #c72092,#6c14d0)
+
+}

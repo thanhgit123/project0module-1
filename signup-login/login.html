@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="icon" href="/img/favicon/favicon (3).ico">
+  </head>
+
+  <body>
+    <header>
+      <a href="../main.html" style="font-size: 30px; color: black">AMARA</a>
+    </header>
+    <div class="container">
+      <div class="my-img">
+        <img src="login-signup-img/newto.PNG" alt="" style="width: 600px" />
+      </div>
+      <div class="login-infor">
+        <h2>Đăng nhập</h2>
+        <br />
+        <label for="">Tên đăng nhập *</label>
+        <input
+          type="text"
+          placeholder="Nhập tên đăng nhập"
+          style="padding-left: 10px"
+          id="username"
+        />
+        <label for="">Mật khẩu *</label>
+        <input
+          type="password"
+          placeholder="Mật khẩu"
+          style="padding-left: 10px"
+          id="password"
+        /><br />
+        <button onclick="login(event)">Đăng nhập</button>
+        <p>
+          Bạn mới biết đến AMARA?
+          <a href="sign up.html">Đăng kí</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      let currentUser = localStorage.getItem("currentUser") || null;
+      let users = JSON.parse(localStorage.getItem("users"));
+      function login(e) {
+        e.preventDefault();
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+    
+        let check = users.find(
+          (user) => user.username === username && user.password === password
+        );
+
+        if(username === "" || password === "" ){
+           alert("Cần nhập thông tin");
+           return;
+        }
+        
+        if (username === "admin" && password === "Admin123") {
+          localStorage.setItem("currentAdmin", JSON.stringify(check));
+          window.location.href = "/admin/nguoidung/users.html";
+          return;
+        }
+        
+        if (!check) {
+          alert("Sai tài khoản hoặc mật khẩu");
+          return;
+        }
+       
+        if (!check.status) {
+          alert("Tài khoản  đã bị khóa");
+          return;
+        }
+
+        localStorage.setItem("currentUser", JSON.stringify(check));
+        window.location.href = "../main.html";
+      }
+    </script>
+  </body>
+</html>
